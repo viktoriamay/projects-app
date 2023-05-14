@@ -1,0 +1,15 @@
+$header_color: #131214;
+$background-color: #18161a;
+$text_color: #fbfaf9;
+$subtext_color: #84848d;
+// $subtext_color: #5c5c64;
+$button_color-blue: #5087fa;
+$button_color-navigate: #0a499a;
+$button_color-navigate-logo: #072969;
+$button_color-red: #ee1d2e;
+
+@mixin montserrat_font ($fontSize, $fontWeight) {
+  font-family: 'Montserrat', sans-serif;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}
