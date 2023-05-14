@@ -1,0 +1,11 @@
+@import '../../assets/SCSS/variables.scss';
+.back_button {
+  width: fit-content;
+  color: $subtext_color;
+  cursor: pointer;
+  transition: all 0.1s ease;
+
+  &:hover {
+    color: $button_color-navigate;
+  }
+}
