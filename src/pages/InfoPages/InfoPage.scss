@@ -1,0 +1,53 @@
+@import '../../assets/SCSS/variables.scss';
+
+.info_page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  a {
+    display: block;
+    width: fit-content;
+transition: all 0.1s ease;
+    &:hover {
+      color: $button_color-navigate;
+    }
+  }
+
+  &__student {
+    text-align: center;
+  }
+
+  &__title {
+text-align: center;
+color: $button_color-navigate;
+// hyphens: auto;
+// word-wrap: break-word;
+  }
+
+  &__item {
+  }
+  
+  &__subtitle {
+    font-size: 14px;
+    color: $subtext_color;
+  }
+  
+  &__info {
+    font-size: 20px;
+
+  }
+
+}
+
+@media (max-width: 450px) {
+  .info_page__title {
+    font-size: 23px;
+  }
+  .info_page__title_project {
+    text-align: left;
+  }
+  .info_page__info {
+    font-size: 18px;
+  }
+}
