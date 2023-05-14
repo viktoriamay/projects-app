@@ -5,7 +5,7 @@ import "./Card.scss";
 
 export const ProjectCard = ({ project }) => {
   return (
-    <Link to={`project/${project?.id}`} className="card">
+    <Link to={`/project/${project?.id}`} className="card">
       <h2 className="card__title">{project?.title}</h2>
       <div className="card__info_wrapper">
         <div className="card__info">
