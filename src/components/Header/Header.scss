@@ -1,0 +1,86 @@
+@import '../../assets/SCSS/variables.scss';
+
+.header {
+  background-color: $header_color;
+  padding: 1rem 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+
+    
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $text_color;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.1s ease;
+    padding: 15px 0;
+    
+    &:hover {
+      transform: translateY(-3px);
+    }
+    
+    &.active {
+      color: $button_color-navigate;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 6px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $button_color-navigate;
+      }
+    }
+  }
+
+  &__add {
+max-width: 1.5rem;
+max-height: 1.5rem;
+background-color: $button_color-navigate-logo;
+border-radius: 100%;
+padding: 0.4rem;
+cursor: pointer;
+transition: all 0.1s ease;
+
+&:hover {
+  background-color: $text_color;
+}
+
+  }
+
+  &__add_icon {
+width: 100%;
+height: 100%;
+fill: $text_color;
+transition: all 0.1s ease;
+
+&:hover {
+  fill: $button_color-navigate-logo;
+
+}
+}
+}
+
+@media (max-width: 576px) {
+  .header__links {
+    display: none;
+  }
+
+  .header__add {
+    display: none;
+  }
+}
