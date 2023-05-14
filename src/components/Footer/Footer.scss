@@ -1,0 +1,13 @@
+@import '../../assets/SCSS/variables.scss';
+
+.footer {
+background-color: $header_color;
+padding: 1rem 0;
+
+&__wrapper
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+}
