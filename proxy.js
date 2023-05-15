@@ -25,3 +25,15 @@
 // app.listen(3000, () => {
 //   console.log('Proxy server started on port 3000');
 // });
+
+///////
+
+const express = require('express');
+const app = express();
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*"); // разрешаем доступ со всех доменов
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"); // разрешаем доступ только к определенным заголовкам
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE"); // разрешаем доступ только к определенным методам запросов
+  next();
+});

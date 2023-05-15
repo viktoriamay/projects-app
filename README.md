@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Проект Projects App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Реализовано:
 
-## Available Scripts
+1.  Каталог проектов
+2.  Каталог информации о студентах
+3.  Страницы: 
+    
+    - Страница с карточками проектов
 
-In the project directory, you can run:
+      ![Страница с карточками проектов](./src/aboutProject/01.png)
 
-### `npm start`
+    - Страница с карточками информации о студентах
+    
+      ![Страница с карточками информации о студентах](./src/aboutProject/02.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    - Страница с полной информацией о проекте
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+      ![Страница с полной информацией о проекте](./src/aboutProject/03.png)
 
-### `npm test`
+    - Страница с полной информацией о студенте
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+      ![Страница с полной информацией о студенте](./src/aboutProject/04.png)
 
-### `npm run build`
+4.  Модальное окно с функцией добавления нового проекта
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+      ![Модальное окно с функцией добавления нового проекта](./src/aboutProject/05.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5.  Дополнительный функционал: 
+    - Адаптивная мобильная версия
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+      ![Адаптивная мобильная версия](./src/aboutProject/06.png)
 
-### `npm run eject`
+6.  Использованные хуки:
+    - useState
+    - useEffect
+    - useForm
+    - useNavigate
+    - useContext
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Использованные технологии
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Библиотека React
+2. React-router-dom (BrowserRouter, Routes, Route)
+3. JavaScript (JSX)
+4. Props, context
+5. SCSS
+6. REST API
+7. Git (GitHub Pages)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Деплой
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    https://viktoriamay.github.io/projects-app
 
-## Learn More
+## Для запуска проекта локально:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Перейти в директорию проекта
+- npm install
+- Команда для запуска npm start

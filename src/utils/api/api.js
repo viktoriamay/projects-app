@@ -9,30 +9,30 @@ class Api {
   }
 
   getProjects() {
-    return fetch(`${this._baseUrl}/projects/`, {
+    return fetch(`${this._baseUrl}projects/`, {
       method: "GET",
     }).then(onResponse);
   }
 
   getProjectByID(projectID) {
-    return fetch(`${this._baseUrl}/projects/${projectID}/`, {
+    return fetch(`${this._baseUrl}projects/${projectID}/`, {
       method: "GET",
     }).then(onResponse);
   }
 
   getStudentsInfo() {
-    return fetch(`${this._baseUrl}/student_infos/`, {
+    return fetch(`${this._baseUrl}student_infos/`, {
       method: "GET",
     }).then(onResponse);
   }
   getStudentByID(studentID) {
-    return fetch(`${this._baseUrl}/student_infos/${studentID}/`, {
+    return fetch(`${this._baseUrl}student_infos/${studentID}/`, {
       method: "GET",
     }).then(onResponse);
   }
 
   createProject(newProject) {
-    return fetch(`/project_create/`, {
+    return fetch(`project_create/`, {
       method: "POST",
       body: JSON.stringify(newProject),
       headers: this._headers,
@@ -41,9 +41,12 @@ class Api {
 }
 
 const config = {
-  baseUrl: "http://84.201.135.211:8002",
+  baseUrl: "http://84.201.135.211:8002/",
   headers: {
     "Content-Type": "application/json",
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE'
   },
 };
 
