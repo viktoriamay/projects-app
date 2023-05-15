@@ -1,4 +1,4 @@
-@import '../../assets/SCSS/variables.scss';
+@import "../../assets/SCSS/variables.scss";
 
 .burger_menu {
   position: relative;
@@ -8,7 +8,6 @@
     width: 2rem;
     height: 2rem;
     fill: $button_color-navigate;
-    // stroke: $button_color-navigate-logo;
   }
 
   &__navigation {
@@ -20,18 +19,14 @@
     gap: 0.5rem;
     text-align: right;
     z-index: 10;
-    // justify-content: flex-end;
     opacity: 0;
     visibility: hidden;
     transform: translateX(200px);
     transition: all 0.5s ease;
-    // width: 10rem;
-// width: 100%;
-
     background: rgba(255, 255, 255, 0.192);
-        backdrop-filter: blur(10px);
-        padding: 0.5rem;
-        border-radius: 5px;
+    backdrop-filter: blur(10px);
+    padding: 0.5rem;
+    border-radius: 5px;
   }
 
   .burger_menu__navigation.active {
@@ -46,18 +41,9 @@
     color: $text_color;
     border-radius: 6px;
     padding: 0.7rem;
-    // display: block;
     cursor: pointer;
-    // text-align: end;
-    // width: fit-content;
-    // width: max-content;
     white-space: nowrap;
-    // width: 100%;
-    // min-width: 100%;
     transition: all 0.1s ease;
-
-  
-   
 
     &:active {
       color: #e8e8e8;

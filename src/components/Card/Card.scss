@@ -32,13 +32,9 @@
     background-color: $button_color-navigate;
     color: $text_color;
     padding: 0.5rem;
-    border-radius: 4px; 
-
-transition: all 0.1s ease;
-
+    border-radius: 4px;
+    transition: all 0.1s ease;
   }
-
-  
 
   &__icon {
     max-width: 1.2rem;
@@ -51,6 +47,10 @@ transition: all 0.1s ease;
   }
 }
 
+.card:hover .card__button {
+  background-color: $text_color;
+  color: $button_color-navigate-logo;
+}
 
 @media (max-width: 350px) {
   .card__title {
@@ -59,10 +59,4 @@ transition: all 0.1s ease;
   .card__info {
     font-size: 14px;
   }
-}
-
-.card:hover .card__button {
-    
-  background-color: $text_color;
-  color: $button_color-navigate-logo;
 }

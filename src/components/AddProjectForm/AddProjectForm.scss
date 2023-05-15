@@ -1,9 +1,6 @@
 @import "../../assets/SCSS/variables.scss";
 
 .form {
-  // display: flex;
-  // flex-direction: column;
-
   padding: 1.5rem;
   min-width: 15rem;
   border-radius: 0.5rem;
@@ -39,7 +36,6 @@
     transition: all 0.2s ease;
     min-width: 100%;
 
-
     &:hover {
       background-color: $background-color;
       color: $text_color;
@@ -54,23 +50,15 @@
   }
 }
 
-
 @media (max-width: 580px) {
   .form__inputs {
-    // display: grid;
-    // grid-template-columns: 1fr;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
-    // width: 5rem;
     width: 100%;
   }
 
   .form__button {
     display: block;
-
-    // width: 5rem;
   }
-  
 }
