@@ -50,7 +50,7 @@
 
 ## Деплой
 
-    https://viktoriamay.github.io/projects-app
+    https://projects-app-povolotskiy.netlify.app/
 
 ## Для запуска проекта локально:
 
